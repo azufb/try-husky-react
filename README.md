@@ -1,50 +1,15 @@
-# React + TypeScript + Vite
+# husky 導入検証用のリポジトリです。
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## husky とは？
 
-Currently, two official plugins are available:
+commit 時や push 時に、Linter を使ったチェックやコードフォーマット、テスト実行などを行うことができるツール。  
+Git Hooks という、Git の操作を行った時に何らかの処理を実行する Git の機能を活用している。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+参考）https://qiita.com/miruon/items/fc344ea0a489cf9252d5
 
-## Expanding the ESLint configuration
+## このリポジトリは何？
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+このリポジトリは、husky の検証を行うために作成いたしました。  
+特に何か機能を実装してはおらず、基本的にはプロジェクト作成直後の React のコードのままです。  
+husky の検証用に変数宣言や console 出力を記述している程度です。  
+検証だけしてみたい方は、fork してみてください。

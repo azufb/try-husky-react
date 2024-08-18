@@ -28,5 +28,6 @@ export default tseslint.config({
       { allowConstantExport: true },
     ],
     'no-var': 'error',
+    camelcase: 'error',
   },
 });
